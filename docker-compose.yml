@@ -1,0 +1,16 @@
+version: '3'
+services:
+  firstfloor:
+    image: fk23/housefirstfloor:v1
+    ports: 
+      - "8000:80"
+
+  secondfloor:
+    image: fk23/housesecondfloor:v1
+    ports:
+      - "8001:80"
+
+  thirdfloor: 
+    image: fk23/housethirdfloor:v1
+    ports: 
+      - "8002:80"    
